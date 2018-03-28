@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"></meta>
+<title>Insert title here</title>
+</head>
+<body>
+		<form action="/dataTransfer" method="post">
+			<table>
+				<tr>
+					<td><lable>源数据库类型</lable></td>
+					
+					<td><input name="entities[0].dbType"></input></td>
+					<td><lable>目标数据库类型</lable></td>
+					
+					<td><input name="entities[1].dbType"></input></td>
+				</tr>
+				<tr>
+					<td><lable>源数据库ip</lable></td>
+					
+					<td><input name="entities[0].ip"></input></td>
+					<td><lable>目标数据库ip</lable></td>
+					
+					<td><input name="entities[1].ip"></input></td>
+				</tr>
+				<tr>
+					<td><lable>源数据库端口</lable></td>
+					
+					<td><input name="entities[0].port"></input></td>
+					<td><lable>目标数据库端口</lable></td>
+					
+					<td><input name="entities[1].port"></input></td>
+				</tr>
+				<tr>
+					<td><lable>源数据库实例</lable></td>
+					
+					<td><input name="entities[0].dbInstance"></input></td>
+					<td><lable>目标数据库实例</lable></td>
+					
+					<td><input name="entities[1].dbInstance"></input></td>
+				</tr>
+				<tr>
+					<td><lable>源数据库用户名</lable></td>
+					
+					<td><input name="entities[0].username"></input></td>
+					<td><lable>目标数据库用户名</lable></td>
+					
+					<td><input name="entities[1].username"></input></td>
+				</tr>
+				<tr>
+					<td><lable>源数据库密码</lable></td>
+					
+					<td><input name="entities[0].password"></input></td>
+					<td><lable>目标数据库密码</lable></td>
+					
+					<td><input name="entities[1].password"></input></td>
+				</tr>
+				<tr>
+					<td><lable>源数据库表</lable></td>
+					
+					<td><select name="entities[0].table">
+					<option value="ARTICLE">ARTICLE</option>
+					<option value="EXTRA_TEXT">EXTRA_TEXT</option>
+					<option value="SCALE">SCALE</option>
+					<option value="STORE">STORE</option>
+					</select></td>
+					<td><lable>目标数据库表</lable></td>
+					
+					<td>
+					<select name="entities[1].table">
+					<option value="t_plu">t_plu</option>
+					<option value="t_et">t_et</option>
+					<option value="t_scale">t_scale</option>
+					<option value="t_store">t_store</option>
+					</select>
+					</td>
+				</tr>
+			</table>
+			<input type="submit">提交</input>
+		</form>
+</body>
+</html>
